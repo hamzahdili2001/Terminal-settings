@@ -1,0 +1,2 @@
+# Terminal-settings
+zshrc files
