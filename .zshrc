@@ -29,10 +29,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # CASE_SENSITIVE="true"
 #
 # Speed cursor
-xset r rate 300 50
+#xset r rate 300 50
 #Disable mousepad
-xinput set-prop 14 "Device Enabled" 0
-setxkbmap -option caps:swapescape
+#xinput set-prop 14 "Device Enabled" 0
+#setxkbmap -option caps:swapescape
 #set MTU
 #sudo ifconfig wlx4c0fc788e8f3 mtu 1400 up
 #Disable left NETCARD
@@ -91,11 +91,11 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
     git
     zsh-autosuggestions
-    zsh-syntax-highlighting
+    #zsh-syntax-highlighting
 	)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -230,10 +230,6 @@ function bettify() {
 	sed -i 's/[[:space:]]\+$//' $1
 }
 
-alias alx="cd /home/h/Desktop/coder/ALX\ SE/"
-alias vimconf="cd /home/h/.config/nvim/"
-alias repo="cd /home/h/Desktop/coder/"
-alias nvim="/home/h/.local/bin/lvim"
-
 
 ZSH_THEME=powerlevel10k/powerlevel10k
+source /home/coder/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
